@@ -25,3 +25,4 @@ for _ in range(C):
     print(result)
 
 # i dont know why but it doesn't work in algospot
+# need to think other way to solve the problem
