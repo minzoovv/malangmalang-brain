@@ -19,5 +19,6 @@ def solution(s):
         result = min(result, total)
     return result
 
+
 result = solution(input())
 print(result)
