@@ -10,9 +10,9 @@ void heapify(int arr[], int p_idx, int n){
   if (lc >= n) return;
 
   rc = lc + 1;
-  mc = (rc >= n) ? lc : (arr[lc] > arr[rc]) ? lc : rc;  
+  mc = (rc >= n) ? lc : (arr[lc] < arr[rc]) ? lc : rc;  
 
-  if (arr[p_idx] < arr[mc]){
+  if (arr[p_idx] > arr[mc]){
     swap(arr[p_idx], arr[mc]);  
     heapify(arr, mc, n);
   }
@@ -28,10 +28,10 @@ int main(){
     heapify(arr, i, size);
   }
 
-  for (int i = 0 ; i < size ; i++){
-    cout << arr[i] << " ";
-  }
-  cout << "\n";
+  // for (int i = 0 ; i < size ; i++){
+  //   cout << arr[i] << " ";
+  // }
+  // cout << "\n";
   
   for (int i = size-1; i >= 0 ; i--){
     swap(arr[0], arr[i]);
