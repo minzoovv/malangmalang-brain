@@ -4,3 +4,5 @@
 .DS_Store
 .test
 .vscode
+/challenge
+/invest/sorting/*.dSYM
