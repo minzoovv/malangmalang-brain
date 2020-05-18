@@ -9,7 +9,6 @@ int partition (int arr[], int start, int end){
   int k = start; 
   for(int i = k+1; i <= end ; i++ ){
     if (pivot > arr[i]) {
-      k++;
       swap(arr[i], arr[k]);
     }
   }  
